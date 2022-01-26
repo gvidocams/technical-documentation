@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CSS Documentation</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>CSS Documentation</header>
+        <ul>
+            <li><a href="#Introduction" class="nav-link">INTRODUCTION</a></li>
+            <li><a href="#Usage" class="nav-link">Usage</a></li>
+            <li><a href="#Syntax" class="nav-link">Syntax</a></li>
+            <li><a href="#Comments" class="nav-link">Comments</a></li>
+            <li><a href="#Selectors" class="nav-link">Selectors</a></li>
+            <li><a href="#Referance" class="nav-link">Referance</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <!--Introduction-->
+        <hr id="top-line">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>What is CSS:</p>
+            <ul>
+                <li>CSS stands for Cascading Style Sheets</li>
+                <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                <li>External stylesheets are stored in CSS files</li>
+            </ul>
+            <p>Why use CSS:</p>
+            <ul>
+                <li>CSS is used to define styles for your web pages, including the design, layout and variations in
+                    display for different devices and screen sizes;</li>
+                <li>With an external stylesheet file, you can change the look of an entire website by changing just one
+                    file!</li>
+            </ul>
+        </section>
+        <!--Usage-->
+        <hr>
+        <section class="main-section" id="Usage">
+            <header>Usage</header>
+            <p>You can use CSS by:</p>
+            <ul>
+                <li><strong>Inline CSS</strong> - adding a style attribute inside a HTML element;</li>
+                <code>&lt;h1 style="color: red;"&gt;&lt;/h1&gt;</code>
+                <li><strong>Internal CSS</strong> - adding a &lt;style&gt; element in the &lt;head&gt; section;</li>
+                <code>&lt;head&gt;&lt;style&gt;&lt;/style&gt;&lt;/head&gt;</code>
+                <li><strong>External CSS</strong> - adding a &lt;link&gt; element to link to an external CSS file.</li>
+                <code>&lt;link rel="stylesheet" href="link/to/your/style.css"&gt;</code>
+            </ul>
+        </section>
+        <!--Syntax-->
+        <hr>
+        <section class="main-section" id="Syntax">
+            <header>Syntax</header>
+            <p>A CSS rule consists of a selector and a declaration block.</p>
+            <p>In this example <bold>h1</bold> is a selector <bold>color</bold> and <bold>font-size</bold> are
+                properties and <bold>blue</bold> and <bold>12px</bold> are values</p>
+            <code>h1 {color: blue; font-size: 12px}</code>
+            <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+        </section>
+        <!--Comments-->
+        <hr>
+        <section class="main-section" id="Comments">
+            <header>Comments</header>
+            <ul>
+                <li>Comments are used to explain the code, and may help when you edit the source code at a later date.
+                </li>
+                <li>Comments are ignored by browsers.</li>
+                <li>A CSS comment is placed inside the &lt;style&gt; element, and starts with /* and ends with */.</li>
+            </ul>
+            <code>/* This is a comment */<br>p {<br>    color: red;<br>}</code>
+            <p>You can add comments wherever you want in the code</p>
+        </section>
+        <!--Selectors-->
+        <hr>
+        <section class="main-section" id="Selectors">
+            <header>Selectors</header>
+            <p>A CSS selector selects the HTML element(s) you want to style.</p>
+            <p>There are a lot of selectors but the most basic ones are:</p>
+            <ul>
+                <li>CSS element selector;</li>
+                <li>CSS id selector;</li>
+                <li>CSS class selector.</li>
+            </ul>
+        </section>
+        <!--Referance-->
+        <hr>
+        <section class="main-section" id="Referance">
+            <header>Referance</header>
+            <p>All documentation from this page is taken from <a href="https://www.w3schools.com/css/css_intro.asp"><i
+                        class="fa fa-external-link" aria-hidden="true"></i>W3Schools</a> and <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS"><i class="fa fa-external-link"
+                        aria-hidden="true"></i>MDN</a></p>
+        </section>
+    </main>
+</body>
+
+</html>
